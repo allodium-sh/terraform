@@ -11,6 +11,7 @@ resource "cloudflare_dns_record" "headscale" {
   content = "136.118.241.125"
   type = "A"
   proxied = false
+  ttl = 3600
 }
 
 # Add DNS records below. Example:
